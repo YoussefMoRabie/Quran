@@ -89,7 +89,7 @@ class _SurahBuilderState extends State<SurahBuilder> {
 
     return SafeArea(
       child: Container(
-        color: nightMood?Colors.black: Color.fromARGB(255, 253, 251, 240),
+        color: nightMood?Color(0xff333739): Color.fromARGB(255, 253, 251, 240),
         child: view
             ? ScrollablePositionedList.builder(
           itemBuilder: (BuildContext context, int index) {
@@ -126,7 +126,7 @@ class _SurahBuilderState extends State<SurahBuilder> {
                         ),
                         PopupMenuItem(
                           onTap: () {
-                            Share.share('''*${widget.arabic[index + previousVerses]['aya_text_emlaey']}*\n Quran App \n Download Now: github.com/Yousef-Rabia ''');
+                            Share.share('''*${widget.arabic[index + previousVerses]['aya_text_emlaey']}*\n Quran App \n Download Now: https://github.com/Yousef-Rabia/Quran ''');
 
                             print(widget.arabic[index + previousVerses]['aya_text_emlaey']);
                           },

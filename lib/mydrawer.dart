@@ -57,16 +57,16 @@ class MyDrawer extends StatelessWidget {
               'Share',
             ),
             onTap: () {
-              Share.share('''*Quran app*\n Developed by Yousef Rabia \n my github github.com/Yousef-Rabia ''');
+              Share.share('''*Quran app*\n Developed by Yousef Rabia \n Download Now: https://github.com/Yousef-Rabia/Quran ''');
               Navigator.pop(context);
             },
           ),
           ListTile(
             leading: const Icon(
-              Icons.rate_review,
+              Icons.phone,
             ),
             title: const Text(
-              'Rate',
+              'Contact',
             ),
             onTap: () async {
               if (!await launchUrl(quranAppurl,
